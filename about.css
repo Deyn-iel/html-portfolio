@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffffff, #62be9c);
+    text-align: center;
+    padding-top: 100px; /* Prevent overlap with fixed header */
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #135b3c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #30a070;
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 30px;
+    color: #135b3c;
+}
+
+.about hr {
+    width: 50%;
+    height: 2px;
+    background: #135b3c;
+    border: none;
+    margin: 10px auto;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background: #135b3c;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #135b3c;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        border: 1px solid white;
+        border-radius: 8px;
+        width: 180px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .about {
+        width: 90%;
+        padding: 30px;
+    }
+}

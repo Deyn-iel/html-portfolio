@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISU</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="Main_Pages_AISU/img/Screenshot_2024-12-03_164234-removebg-preview.png" type="image/png" sizes="32x32">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">AISU</a>
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About AISU</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Other Information</h2>
+            <hr>
+            <p>Feel free to reach out via email or connect on social media.</p>
+            <ul class="social-links">
+                <li><a href="mailto:atchoyalindayu@gmail.com">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Capstone Project of BSIT 4A WMAD</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        // Toggle Menu for Mobile
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
